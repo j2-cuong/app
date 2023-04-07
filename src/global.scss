@@ -1,0 +1,33 @@
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.user-menu-dropdown {
+  .ant-dropdown-menu-item {
+    padding: 12px !important;
+    .anticon {
+      font-size: 16px;
+    }
+  }
+}
+
+.ant-menu-item:active, .ant-menu-submenu-title:active, .ant-menu-item-selected {
+  // background-color: #2c3344 !important;
+  background-color: #5522bb !important;
+  color: #ffffff !important;
+}
+
+.ant-menu {
+  // background-color: transparent !important;
+}
+
+// li.ant-pagination-total-text{
+//   // border: 1px solid #f1f0f0;
+//   position: absolute;
+//   left: 10px;
+// }
+
+.ant-steps.ant-steps-horizontal {
+  width: 50%;
+  margin: auto;
+}
