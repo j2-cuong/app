@@ -44,6 +44,7 @@ export const TourAddingWrapContent = styled.div`
 
 export const TourAddingSection = styled.div`
     position : relative;
+    padding:10px
 `
 
 export const IconDeleteSection = styled.div`
@@ -64,9 +65,14 @@ export const BookingSection = styled.div`
 `
 
 export const BookingWrapContent = styled.div`
+    border-radius:10px;
     width: 100%;
     text-align: left;
+
     margin: auto;
+    height:100%;
+    max-height:500px;
+    overflow-y: auto;
 `
 export const BookingContent20 = styled.div`
     ${TourFormContentBase}

@@ -21,7 +21,152 @@ const layout = {
 const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
-
+ const datatest = [
+  {
+    "tourId": "f913061d-b814-4a4e-9ad5-0a7c73bc37ee",
+    "seatsNumber": 3,
+    "childNo": 1,
+    "adultNo": 1,
+    "infantNo": 1,
+    "cusData": [
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Nguyễn Minh Đức",
+        "emailAddress": "anv@mm.nn",
+        "phoneNumber": "0123456789",
+        "contactAddress": "HN",
+        "customerType": "CLIENT",
+        "ageType": "ADT",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "1996-09-21"
+      },
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Trẻ con",
+        "emailAddress": "",
+        "phoneNumber": "",
+        "contactAddress": "HN",
+        "customerType": "PASSENGER",
+        "ageType": "CHD",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "2020-09-22"
+      },
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Trẻ sơ sinh",
+        "emailAddress": "",
+        "phoneNumber": "",
+        "contactAddress": "HN",
+        "customerType": "PASSENGER",
+        "ageType": "INF",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "2023-01-21"
+      }
+    ]
+  },
+  {
+    "tourId": "f913061d-b814-4a4e-9ad5-0a7c73bc37ee",
+    "seatsNumber": 3,
+    "childNo": 1,
+    "adultNo": 1,
+    "infantNo": 1,
+    "cusData": [
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Nguyễn Minh Đức",
+        "emailAddress": "anv@mm.nn",
+        "phoneNumber": "0123456789",
+        "contactAddress": "HN",
+        "customerType": "CLIENT",
+        "ageType": "ADT",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "1996-09-21"
+      },
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Trẻ con",
+        "emailAddress": "",
+        "phoneNumber": "",
+        "contactAddress": "HN",
+        "customerType": "PASSENGER",
+        "ageType": "CHD",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "2020-09-22"
+      },
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Trẻ sơ sinh",
+        "emailAddress": "",
+        "phoneNumber": "",
+        "contactAddress": "HN",
+        "customerType": "PASSENGER",
+        "ageType": "INF",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "2023-01-21"
+      }
+    ]
+  },
+  {
+    "tourId": "f913061d-b814-4a4e-9ad5-0a7c73bc37ee",
+    "seatsNumber": 3,
+    "childNo": 1,
+    "adultNo": 1,
+    "infantNo": 1,
+    "cusData": [
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Nguyễn Minh Đức",
+        "emailAddress": "anv@mm.nn",
+        "phoneNumber": "0123456789",
+        "contactAddress": "HN",
+        "customerType": "CLIENT",
+        "ageType": "ADT",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "1996-09-21"
+      },
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Trẻ con",
+        "emailAddress": "",
+        "phoneNumber": "",
+        "contactAddress": "HN",
+        "customerType": "PASSENGER",
+        "ageType": "CHD",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "2020-09-22"
+      },
+      {
+        "taxCode": "",
+        "companyName": "",
+        "customerName": "Trẻ sơ sinh",
+        "emailAddress": "",
+        "phoneNumber": "",
+        "contactAddress": "HN",
+        "customerType": "PASSENGER",
+        "ageType": "INF",
+        "room": true,
+        "visa": true,
+        "dateOfBirth": "2023-01-21"
+      }
+    ]
+  }
+]
 const ToursSearch = () => {
   const [form] = Form.useForm();
   const onReset = () => {
@@ -148,8 +293,8 @@ const ToursSearch = () => {
           </Form.Item>
         </Form>
 
-        {data && data.length > 0 ? (
-          <SearchTable data={data} />
+        {datatest && datatest.length > 0 ? (
+          <SearchTable data={datatest} />
         ) : (
           <p
             className="no-data"
